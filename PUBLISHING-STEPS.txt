@@ -1,0 +1,197 @@
+HOW TO PUT YOUR WEBSITE ONLINE FOR FREE
+Dostana House Lifting Shifting
+==================================================
+
+You have one file: index.html  (this is the whole website - text, design,
+images/icons and contact buttons are all inside it)
+
+Two ways to publish it. Method A is recommended. Both are free.
+
+
+--------------------------------------------------
+METHOD A - GitHub Pages (free address like
+           yourname.github.io)
+--------------------------------------------------
+
+What you need: an email address. That's it. No card, no payment.
+
+STEP 1 - Create a GitHub account
+  - Go to https://github.com/signup
+  - Use your email (neerajpathan9@gmail.com is fine)
+  - Pick a username you are happy to show in the web address.
+    Example: if you choose "dostana", your site becomes
+    https://dostana.github.io
+    (Username must be in small letters/numbers, no spaces.)
+
+STEP 2 - Create a repository (a folder on GitHub)
+  - After logging in, click the "+" at the top right > "New repository"
+  - Repository name:   dostana
+    (Any name works. Keep it short, small letters, no spaces.)
+  - Set it to "Public"  (must be public for free Pages hosting)
+  - Leave everything else as it is
+  - Click "Create repository"
+
+STEP 3 - Upload index.html
+  - On the new page, click "uploading an existing file"
+    (or the "Add file" button > "Upload files")
+  - Drag index.html from your phone/computer into the box
+  - Click "Commit changes" (green button)
+
+STEP 4 - Turn on the website
+  - In the repository, click "Settings" (top menu)
+  - In the left sidebar, click "Pages"
+  - Under "Build and deployment":
+      Source   : Deploy from a branch
+      Branch   : main      Folder: / (root)
+  - Click "Save"
+  - Wait 1 to 3 minutes, then refresh that page.
+    A message will appear: "Your site is live at https://..."
+
+STEP 5 - Your address
+  - It will be:  https://YOUR-USERNAME.github.io/dostana/
+  - Example:     https://dostana.github.io/dostana/
+  - Open it on your phone. Check the Call and WhatsApp buttons work.
+
+TIP - shorter address: if you name the repository exactly
+  YOUR-USERNAME.github.io  (example: dostana.github.io), the site opens at
+  https://dostana.github.io  with no extra folder at the end.
+  To get this, create a NEW repository with that exact name and repeat
+  steps 3 and 4.
+
+
+--------------------------------------------------
+METHOD B - Netlify Drop (fastest, about 2 minutes)
+--------------------------------------------------
+
+  - Go to https://app.netlify.com/drop
+  - Drag index.html into the page
+  - You get a live link immediately (something.netlify.app)
+  - Sign up free (email or Google) to keep the link permanently
+    and to rename it, e.g. dostana.netlify.app
+  - Netlify's free plan allows a custom domain later if you buy one.
+
+
+--------------------------------------------------
+CHANGING THE SITE LATER
+--------------------------------------------------
+
+On GitHub:
+  - Open the repository > click index.html > click the pencil (Edit) icon
+  - Make your change > "Commit changes"
+  - The live site updates in about a minute
+
+Things you will probably want to change first:
+  - The wording in the "Services" cards (add or remove what you offer)
+  - The service area - right now it says "across Haryana". You can list
+    your cities: "Rohtak, Jhajjar, Sonipat, Panipat..."
+  - Add photos of your own work. Ask me and I will add a gallery section
+    with your photos.
+  - Prices: a "Starting from" line, if you want to show rates.
+  - The YouTube video in the "Watch our work" section (see below).
+
+
+--------------------------------------------------
+ADDING OR CHANGING VIDEOS
+--------------------------------------------------
+
+The page now has a "Watch our work" section with one embedded video
+and buttons for your channel and a Subscribe link.
+
+To change which video is embedded:
+  - Open the video on YouTube. The link looks like
+      https://youtu.be/TBlEUnLr49I?si=Rgx-oIM5dyh_avGY
+    The code after "youtu.be/" (here TBlEUnLr49I) is the video ID.
+  - In index.html, find this line:
+      src="https://www.youtube-nocookie.com/embed/TBlEUnLr49I?rel=0"
+  - Replace TBlEUnLr49I with the new video ID. Keep the rest as it is.
+  - Also update the two "Watch this video" links if you want them to
+    point to the same video.
+
+The page also shows two video cards under the player ("More from the
+channel"):
+  - A house moved five feet      -> video ID 0xb7BtmmRzY
+  - Is a degree worth it?        -> video ID X4gFMstjiPk
+Each card is a link that opens the video on YouTube. To swap a card,
+change its ID in BOTH places: the link (youtu.be/ID) and the thumbnail
+(i.ytimg.com/vi/ID/hqdefault.jpg).
+
+To add a third card, copy one whole <a class="vcard"> ... </a> block in
+index.html and change the ID, the heading and the one-line text. Or send
+me the links and I will add them.
+
+Note: the channel link and Subscribe button already point to
+  https://www.youtube.com/channel/UC7iXg6gFdiD1MVeqq3jYjyg
+If you ever move to a custom handle like youtube.com/@dostana, tell me
+and I will update all three links.
+
+
+--------------------------------------------------
+FREE DOMAIN (OPTIONAL, LATER)
+--------------------------------------------------
+
+  - yourname.github.io  ->  free, forever, as above
+  - yourname.com        ->  about Rs 800-1,200 per year for the name.
+                            GitHub Pages and Netlify both host it free.
+  You can start free now and add the .com later without rebuilding
+  anything.
+
+
+--------------------------------------------------
+GETTING FOUND ON GOOGLE (IMPORTANT)
+--------------------------------------------------
+
+A new site does NOT appear on Google the day it goes live. Google has
+to find it, read it, and then decide to show it. Two things speed this up.
+
+STEP 1 - Upload three files to the repository
+  index.html, robots.txt and sitemap.xml  ->  all three at the top
+  level of the repo (not inside a folder).
+
+STEP 2 - Tell Google the site exists (Google Search Console, free)
+  - Go to https://search.google.com/search-console
+  - Sign in with your Google account
+  - Choose "URL prefix" and paste your full link:
+      https://neeraj-cyber891.github.io/dostana-house-lifting-shifting/
+  - For verification choose the HTML file method. Google gives you a
+    file with a name like google1a2b3c4d5e6f.html - upload it to the
+    same repository (same place as index.html), wait a minute, then
+    click Verify.
+  - Once verified, open "Sitemaps" in the left menu, type
+      sitemap.xml
+    and click Submit.
+  - Then open "URL Inspection", paste your page link and click
+    "Request indexing".
+
+  Normally the page starts showing in Google search in a few days to
+two weeks after this. Searching your exact business name will work
+first. Words like "house lifting Sirsa" are competitive and take
+longer - that is normal, not a fault in the site.
+
+STEP 3 - Google Business Profile (this is the big one for local work)
+  - Go to https://business.google.com and create a free profile for
+    Dostana House Lifting Shifting
+  - Add your phone numbers, the website link, your service area
+    (Sirsa, Hanumangarh, Bhadra, Haryana, Punjab) and photos
+  - This is what makes you appear in Google Maps and in the "near me"
+    results at the top of the page - usually faster and more useful
+    than the website alone for a local service business
+
+Other things that help: put the link on your WhatsApp Business profile,
+share it in local Facebook/WhatsApp groups, and ask happy customers to
+mention the business name online. Google trusts a site that other
+places link to.
+
+
+--------------------------------------------------
+THINGS TO KNOW
+--------------------------------------------------
+
+  - A free GitHub Pages site is public: anyone with the link can see it.
+    Do not put anything private on it.
+  - GitHub Pages does not give you a contact form. That is why this page
+    uses Call / WhatsApp / Email buttons - these work reliably and cost
+    nothing. If you want a form later, a free service like Formspree can
+    be added.
+  - Test the page on a phone before sharing the link with customers.
+  - Share the link on WhatsApp Business, Google Business Profile and your
+    vehicle/board so people can find it.

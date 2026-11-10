@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neeraj-cyber891.github.io/dostana-house-lifting-shifting/sitemap.xml
